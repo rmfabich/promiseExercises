@@ -18,8 +18,9 @@ let promise = new Promise((resolve, reject)=>{
 	}, 1000);
 
 });
-
-console.log(data.crownPrince);
+promise.then((prince)=>{
+	console.log(prince.data.crownPrince);
+})
 
 //i've tried to use the data in a synchronous fashion, but the crown prince is undefined! (run the code to see) Oh no, let's fix that. 
 //use the promise to console log the crown prince (don't actually modify the promise variable itself, use then() to

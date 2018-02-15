@@ -10,21 +10,21 @@ let promise1 = new Promise((resolve, reject)=>{
 
 let promise2 = new Promise((resolve, reject)=>{
         setTimeout(()=>{
-                resolve("wheres my car");
+                reject("wheres my car");
         }, 300)
 });
 
 let promise3 = new Promise((resolve, reject)=>{
 	setTimeout(()=>{
-		resolve("is a terrible movie");
+		resolve("is a terrible movie!");
 	}, 300);
 });
 
-var allPromises = [promise1, promise2];
+var allPromises = [promise1, promise2, promise3];
 
 Promise.all(allPromises).then((values)=>{
         console.log(values);
-}, (error)={
+}, (error)=>{
 	console.log(error)
 });
 

@@ -5,13 +5,13 @@
 
 //here's what they look like :
 
-var promise = new Promise((resolve, reject)=>{
+var stuff = new Promise((resolve, reject)=>{
 	console.log('running some code inside promise');
-	resolve();
+	resolve(); //resolve is used the same as callback. Does not matter what you call it.
 
 });
 
-console.log(promise);
+//console.log(promise);
 
 //execute the file to see the output - notice that its just a 
 //dang promise object. A promise doesn't do anything until 
@@ -20,6 +20,6 @@ console.log(promise);
 //comment the console log above, and comment out the code below
 //to see how you use the then method 
 
-// promise.then(()=>{
-// 	console.log('running code after promise');
-// });
+ stuff.then(()=>{   //stuff.then(function()){     this is the same thing.
+ 	console.log('running code after promise');
+ });

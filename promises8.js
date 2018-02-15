@@ -12,10 +12,16 @@ let promise2 = new Promise((resolve, reject)=>{
 	}, 300)
 });
 
-var allPromises = [promise1, promise2];
+let promise3 = new Promise((resolve, reject)=>{
+	setTimeout(()=>{
+		resolve(" is a terrible movie!");
+	}, 100)
+});
+
+var allPromises = [promise1, promise2, promise3];
 
 Promise.all(allPromises).then((values)=>{
-	console.log(values);
+	console.log(values[0] + values[1] + values[2]);
 });
 
 

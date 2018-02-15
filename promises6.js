@@ -4,14 +4,24 @@
 
 let promise = new Promise((resolve, reject)=>{
 	
-	let evaluation = 2+2;
+	let evaluation = 2+2 ;
 	let guess = 4;
 
 	if (evaluation === guess){
-		resolve();
+		resolve({
+			message: "your guess is correct"
+		});
 	} else {
-		reject();
+		reject({
+			message: "your message is wrong dum dum"
+		});
 	}
+});
+
+promise.then((obj) =>{
+	console.log(obj.message);
+	}, (kick)=>{
+	console.log(kick.message);
 });
 
 //modify the code to pass the string "your guess is correct!" in the resolve and "your guess is wrong dum dum" in the rejection
