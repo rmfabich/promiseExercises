@@ -24,7 +24,7 @@ let dude = promise1;
 let myCar = promise2;
 let terribleMovie = promise3;
 
-var allPromises = [dude, myCar];
+var allPromises = [dude, myCar, terribleMovie];
 
 Promise.all(allPromises).then((values)=>{
         console.log(values);
