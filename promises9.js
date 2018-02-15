@@ -21,7 +21,15 @@ let promise3 = new Promise((resolve, reject)=>{
 	}, 300);
 });
 
+<<<<<<< HEAD
 var allPromises = [promise1, promise2, promise3];
+=======
+let dude = promise1;
+let myCar = promise2;
+let terribleMovie = promise3;
+
+var allPromises = [dude, myCar, terribleMovie];
+>>>>>>> 8eb6f3b136df0e8b92ab22c07cd842ebbb17e3b1
 
 Promise.all(allPromises).then((values)=>{
         console.log(values);

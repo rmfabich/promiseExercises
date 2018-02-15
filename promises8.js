@@ -12,6 +12,7 @@ let promise2 = new Promise((resolve, reject)=>{
 	}, 300)
 });
 
+<<<<<<< HEAD
 let promise3 = new Promise((resolve, reject)=>{
 	setTimeout(()=>{
 		resolve(" is a terrible movie!");
@@ -19,6 +20,12 @@ let promise3 = new Promise((resolve, reject)=>{
 });
 
 var allPromises = [promise1, promise2, promise3];
+=======
+let getDude = promise1;
+let getMyCar = promise2;
+
+var allPromises = [getDude, getMyCar];
+>>>>>>> 8eb6f3b136df0e8b92ab22c07cd842ebbb17e3b1
 
 Promise.all(allPromises).then((values)=>{
 	console.log(values[0] + values[1] + values[2]);
