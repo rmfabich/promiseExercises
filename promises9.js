@@ -20,7 +20,11 @@ let promise3 = new Promise((resolve, reject)=>{
 	}, 300);
 });
 
-var allPromises = [promise1, promise2];
+let dude = promise1;
+let myCar = promise2;
+let terribleMovie = promise3;
+
+var allPromises = [dude, myCar];
 
 Promise.all(allPromises).then((values)=>{
         console.log(values);
