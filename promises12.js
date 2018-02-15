@@ -7,4 +7,4 @@ axios.get('https://pokeapi.co/api/v2/pokemon/1/').then((response)=>{
 
 console.log(`the pokemon is ${pokemonName}`);
 
-//modify the code above to get the console log to log the name and not undefined
+//modify the code above to get the console log to log the name bulbasaur and not undefined
