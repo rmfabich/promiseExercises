@@ -3,6 +3,10 @@
 
 //let's mock an async event with a timeout
 
+var data = {
+	nation:"Belgium"
+}
+
 let promise = new Promise((resolve, reject)=>{
 	setTimeout(()=>{
 		resolve({

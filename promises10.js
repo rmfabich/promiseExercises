@@ -11,4 +11,3 @@ var axios = require('axios');
 axios.get('https://pokeapi.co/api/v2/pokemon/365/').then((pokemon)=>{
     console.log(pokemon.data.name);
 })
-

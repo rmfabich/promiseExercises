@@ -19,3 +19,4 @@ promise.then(()=>{
 }, ()=>{
 	console.log('this, the second function, gets run after reject()');
 });
+
