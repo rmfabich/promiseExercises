@@ -3,7 +3,7 @@
 //modify the code below to run the console log
 
 var promise = new Promise((resolve, reject)=>{
-	
+	resolve();
 });
 
 promise.then(()=>{
